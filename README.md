@@ -1,14 +1,14 @@
 # fly-straight-sequence
 This script generates the [Fly-Straight seqeunce](https://www.youtube.com/watch?v=pAMgUB51XZA). 
 
+output: `[1, 1, 4, 8, 2, 8, 4, 12, 3, 1, 12, 24, 2, 16, 8, 24, 3, 21, 7, 27]`
+
 # Plotting with Seaborn
 ## Basic Scatterplots
 Scatterplot of 10 numbers:
 ![1000 numbers](10.png)
-
 Scatterplot of 100 numbers:
 ![1000 numbers](100.png)
-
 Scatterplot of 1000 numbers:
 ![1000 numbers](1000.png)
 

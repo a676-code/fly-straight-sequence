@@ -21,7 +21,7 @@ def generate_fly_straight(m):
         n += 1
     return sequence
 
-sequence = generate_fly_straight(15)
+sequence = generate_fly_straight(20)
 print(sequence)
 
 # Basic scatterplots
