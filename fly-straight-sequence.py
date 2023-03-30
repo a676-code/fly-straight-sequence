@@ -21,7 +21,7 @@ def generate_fly_straight(m):
         n += 1
     return sequence
 
-sequence = generate_fly_straight(20)
+sequence = generate_fly_straight(100)
 print(sequence)
 
 # Basic scatterplots
@@ -30,6 +30,7 @@ sequence = generate_fly_straight(m)
 df = pd.DataFrame(sequence, columns=["Number"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Number", data=df)
+plt.savefig("images/10.png")
 plt.show()
 
 m = 100
@@ -37,6 +38,7 @@ sequence = generate_fly_straight(m)
 df = pd.DataFrame(sequence, columns=["Number"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Number", data=df)
+plt.savefig("images/100.png")
 plt.show()
 
 m = 1000
@@ -44,6 +46,7 @@ sequence = generate_fly_straight(m)
 df = pd.DataFrame(sequence, columns=["Number"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Number", data=df)
+plt.savefig("images/1000.png")
 plt.show()
 
 # Scatterplots of the average
@@ -59,6 +62,7 @@ for i, s in enumerate(sequence):
 df = pd.DataFrame(average_sequence, columns=["Average"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/average_10.png")
 plt.show()
 
 m = 100
@@ -73,6 +77,7 @@ for i, s in enumerate(sequence):
 df = pd.DataFrame(average_sequence, columns=["Average"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/average_100.png")
 plt.show()
 
 m = 1000
@@ -87,6 +92,7 @@ for i, s in enumerate(sequence):
 df = pd.DataFrame(average_sequence, columns=["Average"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/average_1000.png")
 plt.show()
 
 m = 10000
@@ -101,6 +107,7 @@ for i, s in enumerate(sequence):
 df = pd.DataFrame(average_sequence, columns=["Average"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/average_10000.png")
 plt.show()
 
 m = 100000
@@ -115,4 +122,5 @@ for i, s in enumerate(sequence):
 df = pd.DataFrame(average_sequence, columns=["Average"])
 df["index"] = [i for i in range(m)]
 sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/average_100000.png")
 plt.show()
